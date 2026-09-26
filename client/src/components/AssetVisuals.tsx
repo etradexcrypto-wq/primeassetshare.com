@@ -1,0 +1,8 @@
+const assets = [
+  ["Stocks", "Own the businesses shaping tomorrow.", "https://files.manuscdn.com/user_upload_by_module/session_file/310519663940838304/zAXPBQaldyhgyzSq.png", "asset-stock"],
+  ["Gold", "A considered place for hard assets.", "https://files.manuscdn.com/user_upload_by_module/session_file/310519663940838304/VhUrLTOYuqdsYxXs.png", "asset-gold"],
+  ["Digital assets", "Explore the optional frontier.", "https://files.manuscdn.com/user_upload_by_module/session_file/310519663940838304/rueyZyJEojBbYXif.png", "asset-crypto"],
+  ["Retirement", "Build toward the life after work.", "https://files.manuscdn.com/user_upload_by_module/session_file/310519663940838304/sNZtsvwxmDFPbcgg.jpg", "asset-retirement"],
+  ["Family savings", "Make the next generation count.", "https://files.manuscdn.com/user_upload_by_module/session_file/310519663940838304/xbJssKMaYvyMTGFd.png", "asset-family"],
+];
+export default function AssetVisuals() { return <section className="asset-visuals section-pad"><div className="container"><div className="section-kicker"><span>05 / More ways to build</span><span className="line" /></div><div className="asset-banner-heading"><h2>Every goal has<br /><em>an asset mix.</em></h2><p>From equity research to retirement planning, make room for the things you are building toward.</p></div><div className="asset-banner-grid">{assets.map(([title, body, image, className]) => <article className={`asset-banner-card ${className}`} key={title}><div><small>primeassetshare / {title}</small><h3>{title}</h3><p>{body}</p></div><img src={image} alt="" loading="lazy" /></article>)}</div></div></section>; }

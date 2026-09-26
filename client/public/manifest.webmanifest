@@ -1,0 +1,17 @@
+{
+  "name": "primeassetshare.com",
+  "short_name": "primeassetshare",
+  "description": "Global markets, thoughtful planning, and a clearer financial future.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050a12",
+  "theme_color": "#050a12",
+  "icons": [
+    {
+      "src": "https://files.manuscdn.com/user_upload_by_module/session_file/310519663940838304/jUMCLNdtXQniUcjj.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

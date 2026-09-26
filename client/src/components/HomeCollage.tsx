@@ -1,0 +1,8 @@
+const cards = [
+  ["People with a plan", "Human guidance for the decisions that matter.", "https://files.manuscdn.com/user_upload_by_module/session_file/310519663940838304/LMIkgRVKrfrwDWjI.png", "collage-investor"],
+  ["Build for tomorrow", "Save toward a life with more options.", "https://files.manuscdn.com/user_upload_by_module/session_file/310519663940838304/pHjezRrfKseuAeun.png", "collage-savings"],
+  ["Ideas in motion", "Invest in the businesses moving the world forward.", "https://files.manuscdn.com/user_upload_by_module/session_file/310519663940838304/jHZqVFWsbcGsMJNH.jpg", "collage-vehicle"],
+  ["Generational thinking", "Make a plan that gives the next chapter room to grow.", "https://files.manuscdn.com/user_upload_by_module/session_file/310519663940838304/pHjezRrfKseuAeun.png", "collage-family"],
+  ["Work together", "The clearest plans are built in conversation.", "https://files.manuscdn.com/user_upload_by_module/session_file/310519663940838304/LMIkgRVKrfrwDWjI.png", "collage-workers"],
+] as const;
+export default function HomeCollage() { return <section className="home-collage section-pad"><div className="container"><div className="section-kicker"><span>06 / Your next chapter</span><span className="line" /></div><div className="collage-heading"><h2>Money is a tool<br /><em>for the life ahead.</em></h2><p>Whether you are building a business, saving for your family, or creating more freedom, the right plan gives your future more shape.</p></div><div className="collage-grid">{cards.map(([title, body, image, className]) => <article className={`collage-card ${className}`} key={title}><div><small>primeassetshare / {title}</small><h3>{title}</h3><p>{body}</p></div><img src={image} alt="" loading="lazy" /></article>)}</div></div></section>; }
