@@ -124,9 +124,17 @@ export default function PlanSection() {
 
         <p className="plans-disclaimer">
           <ShieldCheck size={15} /> Plan names describe platform access and educational support
+<<<<<<< Updated upstream
           only. They do not promise fixed returns, profits, or time-bound investment outcomes.
+=======
+          only.
+>>>>>>> Stashed changes
         </p>
       </div>
     </section>
   );
+<<<<<<< Updated upstream
 }
+=======
+}
+>>>>>>> Stashed changes

@@ -4397,4 +4397,8 @@ body > .skiptranslate { display: none !important; }
   .prime-header { animation: none !important; transition: none !important; }
   .prime-reveal-ready { opacity: 1; transform: none; filter: none; }
   .pov-line::before { animation: none; }
+<<<<<<< Updated upstream
 }
+=======
+}
+>>>>>>> Stashed changes
