@@ -56,6 +56,7 @@ export default function PlanSection() {
           <span>06 / Structured choices</span>
           <span className="line" />
         </div>
+
         <div className="plans-heading">
           <div>
             <p className="prime-kicker">Choose your starting point</p>
@@ -66,10 +67,12 @@ export default function PlanSection() {
             </h2>
           </div>
           <p>
-            Compare the available funding ranges and service levels before choosing a direction. Investment
-            performance is never guaranteed, and every plan should match your goals, timeline, and risk tolerance.
+            Compare the available funding ranges and service levels before choosing a direction.
+            Investment performance is never guaranteed, and every plan should match your goals,
+            timeline, and risk tolerance.
           </p>
         </div>
+
         <div className="plans-image-strip">
           <img
             src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663940838304/sNZtsvwxmDFPbcgg.jpg"
@@ -80,6 +83,7 @@ export default function PlanSection() {
             <strong>Give every contribution a clearer purpose.</strong>
           </div>
         </div>
+
         <div className="plans-grid">
           {plans.map((plan) => (
             <article
@@ -90,15 +94,18 @@ export default function PlanSection() {
               <small>{plan.profile}</small>
               <h3>{plan.name}</h3>
               <p>{plan.copy}</p>
+
               <div className="plan-range">
                 <span>Funding range</span>
                 <strong>{plan.range}</strong>
                 <small>{plan.review}</small>
               </div>
+
               <div className="plan-percentage">
                 <span>Return rate</span>
                 <strong style={{ fontWeight: 700 }}>{plan.percentage}</strong>
               </div>
+
               <ul>
                 {plan.points.map((point) => (
                   <li key={point}>
@@ -107,15 +114,17 @@ export default function PlanSection() {
                   </li>
                 ))}
               </ul>
+
               <a className="text-link" href="https://app.primeassetshare.com">
                 {plan.action} <ArrowUpRight size={15} />
               </a>
             </article>
           ))}
         </div>
+
         <p className="plans-disclaimer">
-          <ShieldCheck size={15} /> Plan names describe platform access and educational support only. They do not
-          promise fixed returns, profits, or time-bound investment outcomes.
+          <ShieldCheck size={15} /> Plan names describe platform access and educational support
+          only. They do not promise fixed returns, profits, or time-bound investment outcomes.
         </p>
       </div>
     </section>
